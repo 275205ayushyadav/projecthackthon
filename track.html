@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit page</title> 
+    <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xwL/DMKbLfzdLOy6eWPBCEf3UC9F6RuiBnFDm3Gp8Ew9C4m81oFwvkFvNqc/+1NPaJAlY9Qb3i67o4r0yvKd6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="topnav">
+        <span class="hamburger">&#9776;</span> 
+        <span class="page-title" style="padding-top: 70px;"></span>
+        <div class="topnav-logo">
+            <img src="assets/logo.jpeg" alt="Logo" style="z-index: 3; width: 40px; height: 40px;">
+        </div>
+    </div>
+
+    <nav class="sidenav">
+        <div class="sidenav-header">
+            <img src="profile.png" alt="Profile Photo">
+            <span>Username</span>
+           
+        </div>
+
+        <ul class="sidenav-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Register.html">Regester Complain</a></li>
+            <li><a href="Track.html">Track complain</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+            <li> <a href="form.html"> Creat Your Profile </a></li>
+        </ul>
+        </nav>
+        <body>
+            <!-- Button to Open the Modal -->
+            <h1>Track Your Application </h1>
+            
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h2 class="modal-title mx-auto">Application Status</h2>
+                      <div class="contianer">
+                        <h5>Enter the Application ID </h5>
+                        <input type="number" class="num" />
+                        <button type="button" class="close" >Submit</button>
+                      </div>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="progress-track">
+                          <ul id="progressbar">
+                              <li class="step0 active "  id="step1">Aplication Approved</li>
+                              <li class="step0 active text-center"  id="step2">In Process</li>
+                              <li class="step0 active text-right"  id="step3"><span id="three">Paper Submission</span></li>
+                              <li class="step0 text-right"  id="step4">Sucess</li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="details d-table">
+                            <div class="d-table-row">
+                              <div class="d-table-cell">
+                                
+                              </div>
+                              <div class="d-table-cell">
+                                
+                              </div>
+                            </div>
+                            <div class="d-table-row">
+                              <div class="d-table-cell">
+                                 
+                              </div>
+                              <div class="d-table-cell">
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="d-table-row">
+                            <a href=#><i class="fa fa-phone" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="d-table-row">
+                            <a href=#><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>      
+                    </div>                  
+                </div>
+              </div>
+              </div>
+        
+              <footer class="site-footer" style="background-color: rgba(5, 5, 5, 0.925); color: aliceblue;">
+                <div class="copyright">
+                  <p>&copy; 2023 YourWebsiteName. All Rights Reserved.</p>
+                </div>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+                  <a href="https://www.instagram.com/YourInstagramHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+                </div>
+              </footer>
+              <script src="track.js"></script>
+        </body>
+        </html>

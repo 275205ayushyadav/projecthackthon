@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xwL/DMKbLfzdLOy6eWPBCEf3UC9F6RuiBnFDm3Gp8Ew9C4m81oFwvkFvNqc/+1NPaJAlY9Qb3i67o4r0yvKd6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="topnav">
+        <span class="hamburger">&#9776;</span> 
+        <span class="page-title" style="padding-top: 70px;"></span>
+        <div class="topnav-logo">
+            <img src="assets/logo.jpeg" alt="Logo" style="z-index: 3; width: 40px; height: 40px;">
+        </div>
+    </div>
+
+    <nav class="sidenav">
+        <div class="sidenav-header">
+            <img src="profile.png" alt="Profile Photo">
+            <span>Username</span>
+           
+        </div>
+
+        <ul class="sidenav-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Register.html">Regester Complain</a></li>
+            <li><a href="Track.html">Track complain</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+            <li> <a href="form.html"> Creat Your Profile </a></li>
+        </ul>
+    </nav>
+          <div class="maincontent">
+            <div class="topbar">
+                <div class="topbar-content">
+                  <button class="location-button">Enable Location</button>
+                  <div class="dropdown">
+                    <button class="dropbtn1">Convert Language</button>
+                    <div class="dropdown-content">
+                      <a href="#">English</a>
+                      <a href="#">Hindi</a>
+                      <a href="#">Telgu</a>
+                      <a href="#">Tamil</a>
+                    </div>
+                  </div>
+                  <button class="rules-button">Rules</button>
+                </div>
+              </div>
+              <div class="container">
+                <div class="slider">
+                  <div class="slides">
+                    <img src="assets/1.jpeg" alt="Image 1" style="width: 100%; height: auto; margin-top: 10px; display: block;">
+                    <img src="assets/2.png" alt="Image 2"  style="width: 100%; height: auto; margin-top: 10px; display: block;">
+                    <img src="assets/3.jpg.jpeg" alt="Image 3"  style="width: 100%; height: auto; margin-top: 10px; display: block;">
+                    <img src="assets/4.jpg.jpeg" alt="Image 4" style="width: 100%; height: auto; margin-top: 10px; display: block;">
+                    <img src="assets/WhatsApp Image 2023-12-17 at 7.16.00 PM.jpeg" alt="Image 5"  style="width: 100%; height: auto; margin-top: 10px; display: block;">
+                    <img src="assets/4.jpg.jpeg" alt="Image 4" style="width: 100%; height: auto; margin-top: 10px; display: block;">
+                  </div>
+                </div>
+                <ul class="bullets"></ul>
+              </div>
+            <hr>
+              <div class="state-container" style="top: 40px;">
+                <h2 class="state-heading" style="color: rgb(82, 42, 42);">Visit Official Complain Site of State</h2>
+                <div class="states">
+                  <div class="state">
+                    <a href="https://jansunwai.up.nic.in/" class="state-link" target="_blank">Uttar Pradesh</a>
+                  </div>
+                  <div class="state">
+                    <a href="https://cmhelpline.mp.gov.in/#" class="state-link" target="_blank">Madhya Pradesh</a>
+                  </div>
+                  <div class="state">
+                    <a href="official_site_rj" class="state-link" target="_blank">Rajasthan</a>
+                  </div>
+                  <div class="state">
+                    <a href="official_site_tn" class="state-link" target="_blank">Tamil Nadu</a>
+                  </div>
+                  <div class="state">
+                    <a href="official_site_hp" class="state-link" target="_blank">Himachal Pradesh</a>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Other States</button>
+                    <div class="dropdown-content">
+                      <a href="official_site_state1" target="_blank">Asam </a>
+                      <a href="official_site_state2" target="_blank">Mizoram</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="card-container">
+                <h1 style="text-align: center;" style="color: rgb(82, 42, 42);"> How can we help You !! </h1>
+                <div class="upper-cards"> 
+                  <div class="card red upper-left">
+                    <a href="Register.html">Register Your Complaint</a>
+                  </div>
+                  <div class="card blue upper-right">
+                    <a href="Track.html">Track Your Complaint</a>
+                  </div>
+                </div>
+                <div class="lower-cards">
+                  <div class="card green lower-left">
+                    <a href="write_complaint_page">Write a Complaint in Your State</a>
+                  </div>
+                  <div class="card orange lower-right">
+                    <a href="government_scheme_page">Government Schemes for Eligibility</a>
+                  </div>
+                </div>
+                </div>
+                <hr>
+                <div class="main-content">
+                  <h2 style="color: rgb(82, 42, 42);">Write Your Complaint</h2>
+                  <form id="complaintForm">
+                    <div class="form-group">
+                      <label for="complaintText">Complaint Details:</label>
+                      <textarea id="complaintText" rows="6" cols="40" placeholder="Enter your complaint here"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="documentUpload">Upload Document:</label>
+                      <input type="file" id="documentUpload">
+                    </div>
+                    
+                    <button type="button" id="submitBtn">Submit</button>
+                  </form>
+                
+                    <div id="userIdDisplay" style="display: none;">
+                      <p>Your User ID: <span id="userId"></span></p>
+                      <p>Department: <span id="department"></span></p>
+                    </div>
+                  </div>
+                  <title>WhatsApp Support</title>
+              <style>
+                .whatsapp-support {
+                  position: fixed;
+                  bottom: 45px;
+                  left: 215px;
+                  z-index: 9999;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="whatsapp-support" >
+                <a href="https://api.whatsapp.com/send?phone=9499459310" target="_blank">
+                  <img src="assets/w.png" alt="WhatsApp Support " style="height: 40px; width: 40px;">
+                </a>
+              </div> 
+              <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+            <script src="https://mediafiles.botpress.cloud/04212e8b-ebc9-4c64-9013-cfa6dfd587ab/webchat/config.js" defer></script>
+            
+          </div>
+          <footer class="site-footer" style="background-color: rgba(5, 5, 5, 0.925); color: aliceblue;">
+            <div class="copyright">
+              <p>&copy; 2023 YourWebsiteName. All Rights Reserved.</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/YourInstagramHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+            </div>
+          </footer>
+          
+    <script src="script.js"></script>
+</body>
+</html>

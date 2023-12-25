@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <header>
+  </header>
+  <div class="container">
+    <form action="registration_process.php" method="post" onsubmit="return validateForm()">
+      <h2>Registration</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" >
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" >
+      </div>
+      <div class="form-group">
+        <label for="password"> Conf-Password:</label>
+        <input type="password" id="password" name="password" >
+      </div>
+      <button type="submit" onsubmit= "returnvalidat()"> Register </button>
+    </form>
+  </div>
+  <div class="topnav">
+    <span class="hamburger">&#9776;</span> 
+    <span class="page-title" style="padding-top: 70px;"></span>
+    <div class="topnav-logo">
+        <img src="assets/logo.jpeg" alt="Logo" style="z-index: 3; width: 40px; height: 40px;">
+    </div>
+</div>
+
+<nav class="sidenav">
+    <div class="sidenav-header">
+        <img src="profile.png" alt="Profile Photo">
+        <span>Username</span>
+       
+    </div>
+
+    <ul class="sidenav-list">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Register.html">Regester Complain</a></li>
+        <li><a href="Track.html">Track complain</a></li>
+        <li><a href="login.html">Login/Signup</a></li>
+        <li> <a href="form.html"> Creat Your Profile </a></li>
+    </ul>
+    </nav>
+    <!--<footer class="site-footer" style="background-color: rgba(5, 5, 5, 0.925); color: aliceblue;">
+      <div class="copyright">
+          <p>&copy; 2023 YourWebsiteName. All Rights Reserved.</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/YourInstagramHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </footer> -->
+  <script>
+    function validateForm() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let password = document.getElementById('password').value;
+
+      if (name === '' || email === '' || password === '') {
+        alert('Please fill in all fields.'); 
+      } else {
+        return true; 
+      }
+    }
+  </script>
+</body>
+</html>

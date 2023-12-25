@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topnav">
+        <span class="hamburger">&#9776;</span> 
+        <span class="page-title" style="padding-top: 70px;"></span>
+        <div class="topnav-logo">
+            <img src="assets/logo.jpeg" alt="Logo" style="z-index: 3; width: 40px; height: 40px;">
+        </div>
+    </div>
+
+    <nav class="sidenav">
+        <div class="sidenav-header">
+            <img src="profile.png" alt="Profile Photo">
+            <span>Username</span>
+           
+        </div>
+
+        <ul class="sidenav-list">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Register.html">Regester Complain</a></li>
+            <li><a href="Track.html">Track complain</a></li>
+            <li><a href="login.html">Login/Signup</a></li>
+            <li> <a href="form.html"> Creat Your Profile </a></li>
+        </ul>
+        </nav>
+    <div class="profile-container">
+        <h1>Profile Settings</h1>
+        <form id="profile-form">
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*"><br><br>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br><br>
+            
+            <label for="address">Full Address:</label>
+            <textarea id="address"></textarea><br><br>
+            
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <footer class="site-footer" style="background-color: rgba(5, 5, 5, 0.925); color: aliceblue;">
+        <div class="copyright">
+          <p>&copy; 2023 YourWebsiteName. All Rights Reserved.</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/YourInstagramHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </footer>
+
+    <script src="profile-script.js"></script>
+</body>
+</html>

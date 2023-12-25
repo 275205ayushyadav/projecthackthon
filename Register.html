@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Complaint</title>
+  <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+  <div class="head">
+    <h1>Submit Your Complaint</h1>
+  </div>
+  <br>
+  <div id="card" class="card">
+    <div class="upload-text">
+      <img src="assets/cat.png" alt="jerry" class="pic">
+      <h3>Upload the file</h3>
+      <input  type="file" id="fileInput">
+    </div>
+    <div class="complaint-text">
+      <h3>Write the Text</h3>
+      <textarea  id="textInput" rows="8" cols="40" placeholder="Enter your complaint here..."></textarea>
+    </div>
+    <div class="result" style="display: none;">
+      <h3>Application Details:</h3>
+      <p id="appId"></p>
+      <p id="deptName"></p>
+    </div>
+    <button class="submit-create" onclick="submitForm()">Submit</button>
+  </div>
+  <div class="topnav">
+    <span class="hamburger">&#9776;</span> 
+    <span class="page-title" style="padding-top: 70px;"></span>
+    <div class="topnav-logo">
+        <img src="assets/logo.jpeg" alt="Logo" style="z-index: 3; width: 40px; height: 40px;">
+    </div>
+</div>
+
+<nav class="sidenav">
+    <div class="sidenav-header">
+        <img src="profile.png" alt="Profile Photo">
+        <span>Username</span>
+       
+    </div>
+
+    <ul class="sidenav-list">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Register.html">Regester Complain</a></li>
+        <li><a href="Track.html">Track complain</a></li>
+        <li><a href="login.html">Login/Signup</a></li>
+        <li> <a href="form.html"> Creat Your Profile </a></li>
+    </ul>
+    </nav>
+    <footer class="site-footer" style="background-color: rgba(5, 5, 5, 0.925); color: aliceblue;">
+        <div class="copyright">
+          <p>&copy; 2023 YourWebsiteName. All Rights Reserved.</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/YourInstagramHandle" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+        </div>
+      </footer>
+  <script src="app.js"></script>
+</body>
+</html>

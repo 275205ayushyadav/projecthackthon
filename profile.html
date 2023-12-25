@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Left-Side Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Profile Information</h2>
+        <img id="profilePhoto" src="" alt="Profile Photo">
+        <p><strong>Name:</strong> <span id="profileName"></span></p>
+        <p><strong>Address:</strong> <span id="profileAddress"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="profileMobile"></span></p>
+        <p><strong>Aadhar Number:</strong> <span id="profileAadhar"></span></p>
+        <p><strong>Terms and Conditions:</strong> <span id="profileTerms"></span></p>
+    </div>
+
+    <script>
+        document.getElementById('profilePhoto').src = sessionStorage.getItem('profilePhoto');
+        document.getElementById('profileName').innerText = sessionStorage.getItem('profileName');
+        document.getElementById('profileAddress').innerText = sessionStorage.getItem('profileAddress');
+        document.getElementById('profileMobile').innerText = sessionStorage.getItem('profileMobile');
+        document.getElementById('profileAadhar').innerText = sessionStorage.getItem('profileAadhar');
+        document.getElementById('profileTerms').innerText = sessionStorage.getItem('profileTerms');
+    </script>
+</body>
+</html>
